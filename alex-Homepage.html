@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Magnus-Start</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <style type="text/css">
+    body {
+      background: #8cbdbd;
+      font-family: Verdana;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    a {
+      color: blue;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    .linkbox {
+      background-color: #ffffff;
+    }
+
+    .field li {
+      margin-bottom: 4px;
+    }
+
+    .field {
+      display: inline-block;
+      border: 1px solid #333;
+      vertical-align: top;
+      margin-bottom: 20px;
+      margin-right: 20px;
+      border-radius: 5px;
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+      text-align: left;
+      background-color: #ffffff;
+    }
+
+    .field h2 {
+      background: #fff;
+      margin: 0px;
+      padding: 3px 8px;
+      border-radius: 5px;
+    }
+
+    .field h3 {
+      padding-left: 15px;
+      margin: 4px 0;
+      font-size: 14px;
+    }
+
+    .field ul {
+      margin: 4px;
+      padding-left: 20px;
+      list-style-type: none;
+    }
+
+    #search {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      text-align: center;
+    }
+
+    #search ul {
+      list-style-type: none;
+    }
+
+    #search li input[type="text"] {
+      width: 200px;
+    }
+
+    #search li label {
+      display: inline-block;
+      width: 100px;
+    }
+  </style>
+
+  <script type="text/javascript">
+    function show() {
+      kriita.style.display = '';
+    }
+  </script>
+  <script type="text/javascript">
+    function hide() {
+      kriita = document.getElementById('kriita');
+      kriita.style.display = 'none';
+    }
+  </script>
+</head>
+
+<body>
+  <div>
+    <div id="search">
+      <form method="get" action="http://www.google.com/search">
+        <ul>
+          <li>
+            <label for="google">Google</label>
+            <input type="text" name="q" id="google" tabindex="1" />
+            <input type="submit" value="Sök" tabindex="2" />
+            <input type="hidden" name="sitesearch" value="" />
+          </li>
+        </ul>
+      </form>
+    </div>
+
+    <div class="field" id="oddhabit" style="display: none">
+      <h2>Oddhabit</h2>
+      <ul>
+        <li>
+          <a href="http://oddhabit.com/">Oddhabit</a>
+        </li>
+        <li>
+          <a href="http://localhost:9000/@api">Fyndiq</a>
+          <a href="http://developers.fyndiq.com/api-v2/#category-tree-resource">Fyndiq Api</a>
+        </li>
+        <li>
+          <a href="http://www.playwerk.com/">Playwerk</a>
+          <a href="http://www.playwerk.com/wp-admin/">admin</a>
+        </li>
+        <li>
+          <a href="https://www.assembla.com/spaces/jambattle/tickets">Assembla</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="field" style="display: none">
+      <h2>Knife &amp; Fork</h2>
+      <ul>
+        <li>
+          <a href="http://www.knifeandfork.se/">Knife &amp; Fork</a>
+          <a href="http://www.knifeandfork.localhost:9000/">.localhost</a>
+        </li>
+        <li>
+          <a href="http://demo.knifeandfork.se/">demo</a>
+          <a href="http://www.knifeandfork.se/admin/">admin</a>
+        </li>
+        <li>
+          <a href="https://bitbucket.org/svedjebratt/knife-and-fork/issues">BitBucket</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="field" style="display: none">
+      <h2>Ellmount</h2>
+      <ul>
+        <li>
+          <a href="http://www.casinoroom.com/">Casinoroom</a>
+          <a href="http://www.casinoroom.localhost/">.localhost</a>
+        </li>
+        <li>
+          <a href="http://www.europoker.com/">Europoker</a>
+          <a href="http://www.europoker.localhost/">.localhost</a>
+        </li>
+        <li>
+          <a href="https://boffice.casinoroom.com/">Admin</a>
+          <a href="http://admin.europoker.localhost/">.localhost</a>
+        </li>
+        <li>
+          <a href="https://www.assembla.com/spaces/ueis/tickets">Assembla</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="field" style="display: none" id="kriita">
+      <h2>Kriita</h2>
+      <ul>
+        <li>
+          <a href="http://localhost:8080/">Kriita example</a>
+          <a href="http://web.test.kriita.com:8090/">test</a>
+        </li>
+        <li>
+          <a href="https://web.kriita.com/web/statistics">Stats</a>
+          <a href="https://web.kriita.com/web/test">Admin</a>
+        </li>
+        <li>
+          <a href="https://www.assembla.com/spaces/kriita/tickets">Assembla</a>
+          <a href="http://kriita-app03-vm.kriita.com:9000/">Jenkins</a>
+        </li>
+      </ul>
+    </div>
+    <div class="field" style="display: none" id="tre">
+      <h2>Tre</h2>
+      <ul>
+        <li>
+          <a href="https://intranet.tre.se/webbdokument/lunchstallen">Dagens Lunch</a>
+        </li>
+        <li>
+          <a href="http://intranet.tre.se">Intranet</a>
+        </li>
+        <li>
+          <a href="https://pod51050.outlook.com/owa/#path=/mail">Mail</a>
+        </li>
+        <li>
+          <a href="https://pod51050.outlook.com/owa/#path=/calendar">Calendar</a>
+        </li>
+        <li>
+          <a href="http://jira.tre.se/secure/RapidBoard.jspa?rapidView=2914">Jira</a>
+        </li>
+        <li>
+          <a href="http://10.55.12.22:8081/OVPM/">Server monitor</a>
+        </li>
+        <li>
+          <a href="https://onlineservices.slack.com">Slack</a>
+        </li>
+        <li>
+          <a href="https://trello.com/b/nRq1Pmrt/tre">Trello</a>
+        </li>
+        <li>
+          <a href="http://x12059pzz.omaccess.net:8080/nexus/index.html#welcome">Nexus</a>
+        </li>
+        <li>
+          <a href="http://x12237dzz.testaccess.net:44342">CRM Start</a>
+        </li>
+        <li>
+          <a href="http://tds.it.tre.se/latest">Tds</a>
+        </li>
+        <li>
+          <a href="http://x12678pzz.omaccess.net/forecast">Forecast report</a>
+        </li>
+        <li>
+          <a href="http://x12678pzz.omaccess.net/app-monitor-web/">App monitor</a>
+        </li>
+        <li>
+          <a href="http://x12678pzz.omaccess.net/view/OST/">Jenkins</a>
+        </li>
+        <li>
+          <a href="http://172.20.7.38:3000/">Jenkins Monitor</a>
+        </li>
+        <li>
+          <a href="http://10.55.101.25:8080/sms/pgSMSList.jsp">Sms hub BT1</a>
+          <a href="http://172.23.130.180:8080/sms/pgSMSList.jsp">NR</a>
+        </li>
+        <li>
+          <a href="http://x14208tzz.testaccess.net/">Greenmail BT1</a>
+          <a href="http://x14209azz.nextrel.tre.se/#/mailbox/INBOX">NR</a>
+        </li>
+        <li>
+          <a href="https://www.tre.se/gui/guidelines/index.html">Tre gui guidelines</a>
+        </li>
+        <li>
+          <a href="http://itsminternweb.tre.se/">Its min turn web</a>
+        </li>
+        <li>
+          <a href="http://3monitor.tre.se:8080/dashboard/">Monitor/Dashboard BT1</a>
+          <a href="http://nr.3monitor.tre.se:8080/dashboard/">NR</a>
+        </li>
+        <li>
+          <a href="http://x14392tzz.testaccess.net:8080/login">TOM Mock BT1</a>
+          <a href="https://x14393azz.nextrel.tre.se:8080/login">NR</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="field" style="display: none" id="new-login">
+      <h2>New Login</h2>
+      <h3>Ronja</h3>
+      <ul>
+        <li>
+          <a href="http://tre.localhost:9000/web/admin">local</a>
+          <a href="https://api.bt1.tre.se/web/admin">bt1</a>
+          <a href="https://api.nextrel.tre.se/web/admin">next</a>
+          <a href="http://mitt3-test03.3test-nr.tre.se/createaccount?country=se&customerType=consumer">NR via Isotop</a>
+        </li>
+        <li>
+          <a href="http://stash.tre.se/projects/SSG/repos/ronja/browse">Stash</a>
+        </li>
+        <li>
+          <a href="http://172.20.7.38:8088/view/Ronja%20Pipeline/">Jenkins Ronja Pipeline</a>
+        </li>
+        <li>
+          <a href="http://172.20.7.38:8088/job/integrations-scala/">Jenkins Scala Integration</a>
+        </li>
+      </ul>
+      <h3>SSG</h3>
+      <ul>
+        <li>
+          <a href="https://localhost:30001/oauth/manager">SSG-BT1</a>
+        </li>
+        <li>
+          <a href="https://localhost:40001/oauth/manager">SSG-NR</a>
+        </li>
+        <li>
+          <a href="https://localhost:50001/oauth/manager">SSG-PROD</a>
+        </li>
+      </ul>
+      <h3>Sonia</h3>
+      <ul>
+        <li>
+          <a href="http://localhost:9000/test-web/register?sessionId=a39da563-1b10-463c-94b6-782f3a42f676&country=dk&boid=205352392142396734369437207728&username=dd@tre.se&scenario=NPOC">Register</a>
+        </li>
+        <li>
+          <a href="http://stash.tre.se/projects/SSG">Stash</a>
+        </li>
+        <li>
+          <a href="http://172.20.7.38:8088/view/SONIA-Pipeline/">Jenkins</a>
+        </li>
+        <li>
+          <a href="http://172.23.64.211/doc/#">Swagger NR</a>
+          <a href="http://10.55.101.48:8080/doc/#!/User_resources/getUserData">BT1</a>
+        </li>
+        <li>
+          <a href="http://wiki.tre.se/confluence/display/ssg/SSG">Wiki</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="field">
+    <h2>Soundtrap</h2>
+    <h3>RFCs</h3>
+      <ul>
+        <li><a href="https://docs.google.com/document/d/1wt_8rDM9poj6fLxjv9yrS0BTt8mv7lIbeEZTkkhbXg4">stweb modularisation</a></li>
+      </ul>
+    </div>
+
+    <div class="field">
+      <h2>Misc</h2>
+      <h3>Sparade Länkar</h3>
+        <ul>
+          <li><a href="https://getpocket.com/a/queue/">Pocket list</a></li>
+        </ul>
+      <h3>Roligt</h3>
+      <ul>
+        <li>
+          <a href="http://www.codingbyte.com/a-developers-life-in-gif/">Roliga dev giffar</a>
+        </li>
+      </ul>
+      <h3>Utmaningar</h3>
+      <ul>
+        <li><a href="http://adventofcode.com/">Advent of Code</a></li>
+      </ul>
+      <h3>Bloggar</h3>
+      <ul>
+        <li><a href="http://blog.cleancoder.com/">Clean Coder</a> </li>
+        <li><a href="https://medium.freecodecamp.org/">Free Code Camp</a> </li>
+        <li><a href="https://dzone.com/">Dzone</a> </li>
+        <li><a href="https://www.infoq.com/">infoq</a> </li>
+        <li><a href="http://www.javacodegeeks.com/">java code geeks</a> </li>
+        <li><a href="http://www.javaspecialists.eu/">java specialists</a> </li>
+        <li><a href="http://www.javaworld.com/">javaworld</a> </li>
+        <li><a href="http://techblog.netflix.com/">netflix techblog</a> </li>
+        <li><a href="https://zeroturnaround.com/rebellabs/">rebel labs</a> </li>
+        <li><a href="https://spring.io/blog">spring</a> </li>
+        <li><a href="http://blog.takipi.com/">takipi</a> </li>
+        <li><a href="https://www.thoughtworks.com/radar">thoughtworks</a> </li>
+        <li><a href="https://www.thoughtworks.com/insights/languages-tools-and-frameworks">thoughtworkds insights</a> </li>
+        <li><a href="http://www.theserverside.com/">the server side</a> </li>
+        <li><a href="http://www.topjavablogs.com/">top java blogs</a> </li>
+        <li><a href="https://www.webcodegeeks.com/">web code geeks</a> </li>
+        <li><a href="https://hackernoon.com/">Hacker Noon</a></li>
+      </ul>
+
+    </div>
+
+    <div class="field">
+      <h2>Verktyg</h2>
+      <ul>
+        <li>
+          <a href="https://resources.jetbrains.com/storage/products/idea/docs/IntelliJIDEA_ReferenceCard.pdf">IntelliJ Keyboard</a>
+        </li>
+        <li>
+          <a href="https://github.com/">Github</a>
+        </li>
+        <li>
+          <a href="http://sethrobertson.github.io/GitFixUm/fixup.html">Git undo faq</a>
+        </li>
+        <li>
+          <a href="http://jquery.org/">JQuery</a>
+          <a href="http://api.jquery.com/">api</a>
+          <a href="http://jqueryui.com/demos/">UI</a>
+        </li>
+        <li>
+          <a href="http://www.w3schools.com/">W3Schools</a>
+          <a href="http://www.w3schools.com/jsref/default.asp">js-ref</a>
+        </li>
+        <li>
+          <a href="http://dev.mysql.com/doc/refman/5.1/en/">mysql</a>
+        </li>
+        <li>
+          <a href="http://angularjs.org/">Angular</a>
+          <a href="http://docs.angularjs.org/api">api</a>
+        </li>
+        <li>
+          <a href="https://www.toggl.com/app/timer">Toggl</a>
+        </li>
+        <li>
+          <a href="https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins">Oh my zsh plugins</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="field">
+      <h2>Docs</h2>
+      <h3>Java</h3>
+      <ul>
+        <li>
+          <a href="http://docs.oracle.com/javase/7/docs/api/">Java 7 api</a>
+          <a href="http://docs.oracle.com/javase/8/docs/api/">8</a>
+        </li>
+      </ul>
+      <h3>JS</h3>
+      <ul>
+        <li>
+          <a href="http://bdcampbell.net/javascript/book/javascript_the_good_parts.pdf">JS the good parts</a>
+        </li>
+      </ul>
+      <h3>Scala</h3>
+      <ul>
+        <li>
+          <a href="https://www.scala-exercises.org/">Scala exercises</a>
+        </li>
+        <li><a href="https://underscore.io/training/">Underscore Books</a></li>
+        <li>
+          <a href="http://twitter.github.io/scala_school/">Scala School</a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/watch?v=ugHsIj60VfQ">Scala Basics</a>
+        </li>
+        <li>
+          <a href="http://danielwestheide.com/scala/neophytes.html">Neophytes Scala</a>
+        </li>
+        <li>
+          <a href="https://www.reddit.com/r/scala/">/r/scala</a>
+        </li>
+      </ul>
+      <h3>Play</h3>
+      <ul>
+        <li>
+          <a href="https://www.playframework.com/documentation/latest/Home">Play 2</a>
+          <a href="http://www.playframework.com/documentation/latest/api/scala/index.html">scala</a>
+          <a href="http://www.playframework.com/documentation/latest/api/java/index.html">java</a>
+        </li>
+        <li>
+          <a href="http://tyda.se/">tyda.se</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="field">
+      <h2>Google</h2>
+      <ul>
+        <li>
+          <a href="http://www.gmail.com/">mail</a>
+        </li>
+        <li>
+          <a href="http://plus.google.com/">plus</a>
+        </li>
+        <li>
+          <a href="http://calendar.google.com/">calendar</a>
+        </li>
+        <li>
+          <a href="http://translate.google.com/">translate</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="field">
+      <h2>Freestyle</h2>
+      <ul>
+        <li>
+          <a href="javascript:show()">Visa dolda</a>
+        </li>
+        <li>
+          <a href="javascript:hide()">Dölj</a>
+        </li>
+        <li>
+          <a href="http://onmytv.info/">Onmytv.info</a>
+        </li>
+        <li>
+          <a href="http://tvdags.se/tabla">tvdags</a>
+        </li>
+        <li>
+          <a href="http://www.torrentbytes.net">Torrentbytes</a>
+        </li>
+        <li>
+          <a href="http://www.thepiratebay.org">Pirate bay</a>
+        </li>
+        <li>
+          <a href="https://play.spotify.com/?http=1">Spotify</a>
+        </li>
+        <li>
+          <a href="http://www.yr.no/place/Sweden/Stockholm/Stockholm/hour_by_hour.html">yr</a>
+          <a href="http://www.klart.se/v%C3%A4der-stockholm.html?v=per_timme">klart</a>
+          <a href="http://www.smhi.se/vadret/vadret-i-sverige/land/chart.do?geonameid=2673730">smhi</a>
+        </li>
+        <li style="white-space: nowrap;">
+          <a href="http://imdb.com/">imdb</a>
+          <form action="http://imdb.com/find" method="get" style="display: inline">
+            <input type="text" name="q" />
+            <input type="hidden" name="s" value="all" />
+            <input type="submit" value="Sök" />
+          </form>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>
